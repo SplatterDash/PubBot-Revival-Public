@@ -1,20 +1,20 @@
 {
   "name": "pubbot-v2",
-  "version": "1.0.0",
+  "version": "1.1.5",
   "description": "The second iteration of the bot in Ye Olde Hado's Pub! Revived starting January 2026.",
   "license": "ISC",
   "author": "SplatterDash",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "node --env-file=.env.development .",
     "start": "node --env-file=.env.production .",
-    "debug": "node --env-file=.env.production --inspect .",
+    "debug": "node --env-file=.env.development --inspect .",
     "lint": "eslint .",
-    "commands-dev": "node --env-file=.env.development deploy-commands.js",
-    "commands-prod": "node --env-file=.env.production deploy-commands.js",
-    "database-dev": "node --env-file=.env.development dbInit.js -f",
-    "database-prod": "node --env-file=.env.production dbInit.js -f"
+    "commands-dev": "node --env-file=.env.development src/deploy-commands.js",
+    "commands-prod": "node --env-file=.env.production src/deploy-commands.js",
+    "database-dev": "node --env-file=.env.development src/dbInit.js -f",
+    "database-prod": "node --env-file=.env.production src/dbInit.js -f"
   },
   "dependencies": {
     "@discord-player/extractor": "^7.1.0",
@@ -24,7 +24,7 @@
     "discord-player-spotify": "^1.1.7",
     "discord-player-tts": "^1.0.9",
     "discord-player-youtube": "^0.8.2",
-    "discord.js": "^14.25.1",
+    "discord.js": "^14.26.4",
     "sequelize": "^6.37.7",
     "sqlite3": "^5.1.7"
   },
