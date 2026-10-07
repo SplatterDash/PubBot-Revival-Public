@@ -137,3 +137,5 @@ src/hidden_data/hidden-data-prod.json
 src/xpdata/database-development.sqlite
 src/xpdata/database-production copy.sqlite
 src/xpdata/database-production.sqlite
+src/xpdata/level-roles-prod.json
+src/xpdata/level-roles-dev.json
